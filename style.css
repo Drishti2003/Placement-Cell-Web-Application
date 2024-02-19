@@ -1,0 +1,105 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+
+}
+
+body{
+    display: grid;
+    font-family: sans-serif;
+    box-sizing: border-box;
+
+}
+
+nav{
+    width: 100%;
+    background-color: #0c1c36;
+    color: white;
+    display: grid;
+    grid-template-columns:auto 40vh ;
+}
+
+#logo {
+    width: 140px;
+    height: 120px;
+    padding-left: 20px;
+    justify-content: space-between;
+    
+}
+
+#profile{
+    text-align:end;
+    padding: 80px 40px 20px 0px;
+    font-size: 20px;
+    font-family: sans-serif;
+    background-color: #0c1c36;
+    color: white;
+    border: 0px;
+
+}
+
+.close-modal {
+    position: absolute;
+    top: 1.2rem;
+    right: 2rem;
+    font-size: 3rem;
+    color: #ffffff;
+    cursor: pointer;
+    border: none;
+    background: none;
+  }
+
+.hidden {
+    display: none;
+  }
+  
+.modal {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 50%;
+    background-color: white;
+    padding-top: 0rem;
+    border-radius: 5px;
+    box-shadow: 0 3rem 5rem rgba(0, 0, 0, 0.3);
+    z-index: 10;
+    border: #0c1c36 0.3rem solid;
+  }
+  
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    backdrop-filter: blur(3px);
+    z-index: 5;
+  }
+  
+.Profile-container{
+  line-height: 1.4rem;
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-template-rows: auto auto auto;
+  padding: 2rem 3.5rem 3.5rem 3.5rem;
+}
+
+.modal>h1{
+  text-align: center;
+  padding:1.4rem 0 1.4rem 0;
+  background-color: #0c1c36;
+  color:white;
+  width: 100%;
+}
+
+.profile-photo{
+  grid-row: 1/span 3;
+}
+
+.profile-photo>img{
+  width: 186px;
+  height: 192px;
+}
